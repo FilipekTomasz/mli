@@ -1,0 +1,27 @@
+ .team-container{
+        display: inline-block;
+    }
+    
+    #explanation{
+        display: none;
+        margin-left: 10;
+    }
+    .u-container{
+        display:inline-block;
+        margin: 8;
+    }
+    #u1-container{
+    }
+    #u2-container{
+        display:none;
+    }
+    #u3-container{
+        display:none;
+    }
+    textarea {
+        resize: none;
+    }
+    .promotor-container{
+        display: inline-block;
+        margin: 15;
+    }

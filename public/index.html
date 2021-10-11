@@ -1,0 +1,154 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <form action="/register" method="POST" onsubmit="validateMyForm(event);" enctype="multipart/form-data">
+        Kategoria
+        <br>
+        <input type="radio" id="didactic" name="category" value="didactic" required>
+        <label for="didactic">pomoc dydaktyczna</label><br>
+        <input type="radio" id="ecological" name="category" value="ecological" required>
+        <label for="ecological">pomysł ekologiczny</label><br>
+        <input type="radio" id="technical" name="category" value="technical" required>
+        <label for="technical">pomysł techniczny</label><br>
+        <input type="radio" id="software" name="category" value="software" required>
+        <label for="software">usprawnienie softwarowo – techniczne</label>
+        
+    <br><br>
+        <input type="text" id="title" name="title" required>
+        <label for="title">Tytuł projektu</label><br>
+        <div>
+        <div class="team-container">
+            
+        Wielkość zespołu
+        <br>
+        <input type="radio" id="u1" name="teamSize" value=1 checked="checked" required>
+        <label for="u1">1</label><br>
+        <input type="radio" id="u2" name="teamSize" value=2 required>
+        <label for="u2">2</label><br>
+        <input type="radio" id="u3" name="teamSize"value=3 required>
+        <label for="u3">3*</label><br><br>
+            </div>
+             <textarea id="explanation" rows="4" cols="60" name="explanation"> Wytłumacz dlaczego twój zespół zawiera 3 członków </textarea>
+            
+        </div>
+    
+        
+        <br>
+        <div id="u1-container" class="u-container">
+            <label for="u1Name">Imię</label><br>
+            <input type="text" id="u1Name" name="u1Name"><br>
+            <label for="u1Surname">Nazwisko</label><br>
+            <input type="text" id="u1Surname" name="u1Surname"><br>
+            <label for="u1Class">Klasa</label><br>
+            <input type="text" id="u1Class" name="u1Class"><br>
+            <label for="u1Birthday">Data urodzenia</label><br>
+            <input type="date" id="u1Birthday" name="u1Birthday"><br>
+            <label for="u1Address">Adres zamieszkania</label><br>
+            <input type="text" id="u1Address" name="u1Address"><br>
+            <label for="u1School">Szkoła</label><br>
+            <input type="text" id="u1School" name="u1School"><br>
+            <label for="u1Email">Email</label><br>
+            <input type="email" id="u1Email" name="u1Email"><br>
+            <label for="u1Tel">Numer telefonu</label><br>
+            <input type="tel" id="u1Tel" name="u1Tel"><br>
+            <label for="u1Workdone">Procent wykonanej pracy</label><br>
+            <input type="tel" id="u1Workdone" name="u1Workdone">
+        </div>
+        
+      <div id="u2-container" class="u-container">
+            <label for="u2Name">Imię</label><br>
+            <input type="text" id="u2Name" name="u2Name"><br>
+            <label for="u2Surname">Nazwisko</label><br>
+            <input type="text" id="u2Surname" name="u2Surname"><br>
+            <label for="u2Class">Klasa</label><br>
+            <input type="text" id="u2Class" name="u2Class"><br>
+            <label for="u2Birthday">Data urodzenia</label><br>
+            <input type="date" id="u2Birthday" name="u2Birthday"><br>
+            <label for="u2Address">Adres zamieszkania</label><br>
+            <input type="text" id="u2Address" name="u2Address"><br>
+            <label for="u2School">Szkoła</label><br>
+            <input type="text" id="u2School" name="u2School"><br>
+            <label for="u2Email">Email</label><br>
+            <input type="email" id="u2Email" name="u2Email"><br>
+            <label for="u2Tel">Numer telefonu</label><br>
+            <input type="tel" id="u2Tel" name="u2Tel"><br>
+            <label for="u2Workdone">Procent wykonanej pracy</label><br>
+            <input type="tel" id="u2Workdone" name="u2Workdone">
+        </div>
+        
+       <div id="u3-container" class="u-container">
+            <label for="u3Name">Imię</label><br>
+            <input type="text" id="u3Name" name="u3Name"><br>
+            <label for="u3Surname">Nazwisko</label><br>
+            <input type="text" id="u3Surname" name="u3Surname"><br>
+            <label for="u3Class">Klasa</label><br>
+            <input type="text" id="u3Class" name="u3Class"><br>
+            <label for="u3Birthday">Data urodzenia</label><br>
+            <input type="date" id="u3Birthday" name="u3Birthday"><br>
+            <label for="u3Address">Adres zamieszkania</label><br>
+            <input type="text" id="u3Address" name="u3Address"><br>
+            <label for="u3School">Szkoła</label><br>
+            <input type="text" id="u3School" name="u3School"><br>
+            <label for="u3Email">Email</label><br>
+            <input type="email" id="u3Email" name="u3Email"><br>
+            <label for="u3Tel">Numer telefonu</label><br>
+            <input type="tel" id="u3Tel" name="u3Tel"><br>
+            <label for="u3Workdone">Procent wykonanej pracy</label><br>
+            <input type="tel" id="u3Workdone" name="u3Workdone">
+        </div>
+        <br>
+
+        <label for="report">Sprawozdanie (pdf/docx/odt)</label><br>
+        <input type="file" id="report" name="report" required><br><br>
+        <label for="registration">Zgłoszenie (pdf/docx/odt)</label><br>
+        <input type="file" id="registration" name="registration" required><br><br>
+        <label for="documentation">Dokumentacja techniczna (pdf/docx/odt)</label><br>
+        <input type="file" id="documentation" name="documentation" required><br>
+        <br>
+        <button type="button" id="addPromotorBtn">Dodaj promotra</button>
+        <button type="button" id="deletePromotorBtn">Usuń promotra</button>
+        <input type="hidden" name="promotors" id="promotrs-number" value=1>
+        <div id="promotor-container">
+            <div id="promotor0" class="promotor-container">
+            <label for="p${promotrs}Name">Imię</label><br>
+            <input type="text" id="p0Name" name="p0Name" required><br>
+            <label for="p0Surname">Nazwisko</label><br>
+            <input type="text" id="p0Surname" name="p0Surame" required><br>
+            <label for="p0Email">Email</label><br>
+            <input type="email" id="p0Email" name="p0Email" required><br>
+            <label for="p0Tel">Numer telefonu</label><br>
+            <input type="tel" id="p0Tel" name="p0Tel" required><br>    
+            </div>
+        </div>
+        
+        <label for="rodo">Akcpetuje rodo itp</label>
+        <input type="checkbox" id="rodo" name="rodo" required>
+        <br>
+        <input type="submit" value="zgłos formluarz">
+        </form>
+        <br><br>
+        
+        <button id="validate">validacja</button>
+        <script src="index.js"></script>
+        <script src="validate.js"></script>
+        <script>
+        function validateMyForm(e){
+            let validated = true;
+            
+            
+            if(!validated){
+                e.preventDefault();
+            }
+
+        }
+        
+        
+        
+        
+        
+        </script>
+    </body>
+</html>
